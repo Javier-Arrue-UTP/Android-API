@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EncuestaDocentesActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/sticker_encuesta_docente"
+        android:padding="14dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="63dp"
+                android:background="@drawable/logoutp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="63dp"
+                    android:background="@drawable/logofisc"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:text="Selecciona los filtros!"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Ingrese su cédula"
+                android:textColor="#000"
+                android:textSize="15dp"
+                />
+            
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cedula"
+                android:id="@+id/cedula"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerAsignaturas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerGrupos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerSemestre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:onClick="validacionDocente"
+                android:text="Validar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:id="@+id/botonBTN"
+                android:background="@drawable/boton_encuesta_docente"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#FFF"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:background="@android:drawable/divider_horizontal_textfield"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:text="Encuesta Docente"
+            />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:background="@android:drawable/divider_horizontal_textfield"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/activity_prueba"
+        android:layout_margin="12dp">
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/boton_encuesta_docente"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="#FFF"
+        android:text="Enviar"
+        android:onClick="EnviarEncuesta"
+        android:id="@+id/btnEnviar"
+        android:visibility="gone"
+        />
+
+
+
+</LinearLayout>
+
+</ScrollView>

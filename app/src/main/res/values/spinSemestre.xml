@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Semestre">
+        <item>Seleccionar Semestre</item>
+        <item>Semestre I</item>
+        <item>Semestre II</item>
+    </string-array>
+</resources>
